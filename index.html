@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/style.min.css?_v=20220513162716">
+   <link rel="icon" href="img/timer.png" sizes="32x32">
+   <title>Pomodoro</title>
+</head>
+<body>
+   <header>
+</header>
+   <div class="container">
+      <div class="pomo">
+         <div class="pomo__top">
+            <button class="pomo__buttons forest"><audio src="files/Forest.mp3" loop id="Forest"></audio>Forest</button>
+            <button class="pomo__buttons ocean"><audio src="files/Tides.mp3" loop id="Ocean"></audio>Ocean</button>
+            <button class="pomo__buttons rain"><audio src="files/Rain.mp3" loop id="Rainy"></audio>Rainy</button>
+            <button class="pomo__buttons peace"><audio src="files/Peace.mp3" loop id="Peace"></audio>Peace</button>
+            <button class="pomo__buttons cafe"><audio src="files/Cafe.mp3" loop id="Cafe"></audio>Cafe</button>
+            <button class="pomo__buttons fire"><audio src="files/Fire.mp3" loop id="Fire"></audio>Fire</button>
+         </div>
+         <div class="pomo__block">
+            <div class="pomo__inner">
+               <span class="pomo__session">Session 1</span>
+               <span class="pomo__time"><div class="pomo__hour">30</div>:<div class="pomo__seconds">00</div></span>
+               <div class="pomo__timebuttons">
+                  <button class="pomo__little" id="start"><img class="pomo__icon" src="img/icons/icons.svg#start" width="16px" alt="-">Start</button>
+                  <button class="pomo__little disabled"  id="reset"><img class="pomo__icon" src="img/icons/icons.svg#reset" width="15px" alt="-">Reset</button>
+                  <button class="pomo__little disabled"  id="pause"><img class="pomo__icon" src="img/icons/icons.svg#pause" width="20px" alt="-">Pause</button>
+               </div>
+            </div>
+         </div>
+         <div class="pomo__preferences">
+            <div class="pref__item">
+               <button class="pref__arrow" id="sessionUp"><img class="arrow__top" src="img/icons/icons.svg#doubleArrow" width="20px" alt=""></button>
+               <div class="pref__text">SESSION</div>
+               <div class="pref__count" id="session">30</div>
+               <button class="pref__down" id="sessionDown"><img class="arrow__bot" src="img/icons/icons.svg#doubleArrowDark" width="20px" alt=""></button>
+            </div>
+            <div class="pref__item">
+               <button class="pref__arrow" id="chillUp"><img class="arrow__top" src="img/icons/icons.svg#doubleArrow" width="20px" alt=""></button>
+               <div class="pref__text">BREAK</div>
+               <div class="pref__count" id="chill">5</div>
+               <button class="pref__down" id="chillDown"><img class="arrow__bot" src="img/icons/icons.svg#doubleArrowDark" width="20px" alt=""></button>
+            </div>
+         </div>
+      </div>
+   </div>
+   <footer></footer>
+   <script src="js/app.min.js?_v=20220513162716"></script>
+</body>
+</html>
